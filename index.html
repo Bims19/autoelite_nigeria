@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>AutoElite NG &mdash; Import Mercedes &middot; BMW &middot; Volkswagen to Nigeria</title>
+<title>AutoElite NG &mdash; Import Mercedes &middot; BMW &middot; Audi &middot; Volkswagen to Nigeria</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,600&family=DM+Sans:wght@200;300;400;500&display=swap" rel="stylesheet">
 <style>
@@ -188,7 +188,7 @@ nav{position:sticky;top:0;z-index:1000;background:rgba(244,245,240,.96);backdrop
 .rate-note{font-size:.65rem;color:rgba(255,255,255,.45);max-width:280px;line-height:1.65}
 
 /* BRANDS */
-.brands-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5px;background:var(--border)}
+.brands-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5px;background:var(--border)}
 .brand-card{background:var(--white);overflow:hidden;transition:transform var(--t),box-shadow var(--t)}
 .brand-card:hover{transform:translateY(-4px);box-shadow:var(--sh-lg);z-index:2}
 .brand-img-wrap{position:relative;overflow:hidden;aspect-ratio:16/9;background:var(--bg3);display:flex;align-items:center;justify-content:center}
@@ -259,7 +259,7 @@ nav{position:sticky;top:0;z-index:1000;background:rgba(244,245,240,.96);backdrop
 .part-img-wrap{aspect-ratio:4/3;position:relative;overflow:hidden;background:var(--bg3);display:flex;align-items:center;justify-content:center;cursor:zoom-in}
 .part-img-wrap img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .7s var(--ease)}
 .part-card:hover .part-img-wrap img{transform:scale(1.06)}
-.part-zoom{position:absolute;inset:0;z-index:3;display:flex;align-items:center;justify-content:center;background:rgba(26,28,22,.0);transition:background .3s;pointer-events:none}
+.part-zoom{position:absolute;inset:0;z-index:3;display:flex;align-items:center;justify-content:center;background:rgba(26,28,22,.0);transition:background .3s;cursor:zoom-in}
 .part-zoom span{font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;color:#fff;background:rgba(196,146,42,.9);padding:.4rem 1rem;opacity:0;transition:opacity .3s;backdrop-filter:blur(4px)}
 .part-card:hover .part-zoom{background:rgba(26,28,22,.18)}
 .part-card:hover .part-zoom span{opacity:1}
@@ -281,7 +281,7 @@ nav{position:sticky;top:0;z-index:1000;background:rgba(244,245,240,.96);backdrop
 .acc-img-wrap{aspect-ratio:1/1;position:relative;overflow:hidden;background:linear-gradient(135deg,var(--bg2),var(--bg3));display:flex;align-items:center;justify-content:center;cursor:zoom-in}
 .acc-img-wrap img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .7s var(--ease)}
 .acc-card:hover .acc-img-wrap img{transform:scale(1.06)}
-.acc-zoom{position:absolute;inset:0;z-index:3;display:flex;align-items:center;justify-content:center;background:rgba(26,28,22,.0);transition:background .3s;pointer-events:none}
+.acc-zoom{position:absolute;inset:0;z-index:3;display:flex;align-items:center;justify-content:center;background:rgba(26,28,22,.0);transition:background .3s;cursor:zoom-in}
 .acc-zoom span{font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;color:#fff;background:rgba(196,146,42,.9);padding:.4rem 1rem;opacity:0;transition:opacity .3s;backdrop-filter:blur(4px)}
 .acc-card:hover .acc-zoom{background:rgba(26,28,22,.18)}
 .acc-card:hover .acc-zoom span{opacity:1}
@@ -719,7 +719,7 @@ textarea{resize:vertical;min-height:68px}
     <div class="hero-left">
       <div class="hero-kicker">Nigeria&rsquo;s Premier Auto Import Portal</div>
       <h1 class="hero-title"><strong>German</strong> Precision.<br><em>Delivered to Your Door</em><br>in Nigeria.</h1>
-      <p class="hero-sub">Order directly from <span>Mercedes-Benz</span>, <span>BMW</span>, and <span>Volkswagen</span> dealers across Europe and the USA. Full import assistance, customs clearance, and delivery anywhere in Nigeria.</p>
+      <p class="hero-sub">Order directly from <span>Mercedes-Benz</span>, <span>BMW</span>, <span>Audi</span>, and <span>Volkswagen</span> dealers across Europe and the USA. Full import assistance, customs clearance, and delivery anywhere in Nigeria.</p>
       <div class="hero-ctas">
         <button class="btn-primary" onclick="goTo('vehicles')">Browse Vehicles</button>
         <button class="btn-ghost" onclick="document.getElementById('how-sec').scrollIntoView({behavior:'smooth'})">How It Works</button>
@@ -741,6 +741,7 @@ textarea{resize:vertical;min-height:68px}
       <div class="hero-brand-pills">
         <div class="hbrand-pill">Mercedes-Benz</div>
         <div class="hbrand-pill">BMW</div>
+        <div class="hbrand-pill">Audi</div>
         <div class="hbrand-pill">Volkswagen</div>
       </div>
     </div>
@@ -773,7 +774,7 @@ textarea{resize:vertical;min-height:68px}
     <div class="rate-note">Prices shown in USD. NGN equivalent is indicative. Final invoice rates locked at time of payment.</div>
   </div>
   <section class="sec" style="background:var(--bg2)">
-    <div class="sec-head reveal"><div class="kicker">Our Manufacturer Partners</div><h2 class="sec-title">Three Icons of <em>German Engineering</em></h2><div class="gold-rule"></div></div>
+    <div class="sec-head reveal"><div class="kicker">Our Manufacturer Partners</div><h2 class="sec-title">Four Icons of <em>German Engineering</em></h2><div class="gold-rule"></div></div>
     <div class="brands-grid reveal">
       <div class="brand-card" onclick="goTo('vehicles','mercedes')">
         <div class="brand-img-wrap"><div class="brand-img-ph">&#x1F697;</div><img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=900&q=80&auto=format&fit=crop" alt="Mercedes-Benz" onerror="this.style.display='none'" loading="lazy"></div>
@@ -789,6 +790,11 @@ textarea{resize:vertical;min-height:68px}
         <div class="brand-img-wrap"><div class="brand-img-ph">&#x1F699;</div><img src="https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?w=900&q=80&auto=format&fit=crop" alt="Volkswagen" onerror="this.style.display='none'" loading="lazy"></div>
         <div class="brand-color-bar" style="background:#001e50"></div>
         <div class="brand-body"><div class="brand-logo-row"><div class="brand-name">Volkswagen</div><div class="brand-country">Germany &middot; Wolfsburg</div></div><div class="brand-tagline">Das Auto</div><div class="brand-stats"><div><div class="bstat-val">35+</div><div class="bstat-key">Models</div></div><div><div class="bstat-val">1937</div><div class="bstat-key">Founded</div></div></div><button class="brand-cta">View All Models &#x2192;</button></div>
+      </div>
+      <div class="brand-card" onclick="goTo('vehicles','audi')">
+        <div class="brand-img-wrap"><div class="brand-img-ph">&#x1F3CE;</div><img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=900&q=80&auto=format&fit=crop" alt="Audi" onerror="this.style.display='none'" loading="lazy"></div>
+        <div class="brand-color-bar" style="background:#bb0a14"></div>
+        <div class="brand-body"><div class="brand-logo-row"><div class="brand-name">Audi</div><div class="brand-country">Germany &middot; Ingolstadt</div></div><div class="brand-tagline">Vorsprung durch Technik</div><div class="brand-stats"><div><div class="bstat-val">30+</div><div class="bstat-key">Models</div></div><div><div class="bstat-val">1909</div><div class="bstat-key">Founded</div></div></div><button class="brand-cta">View All Models &#x2192;</button></div>
       </div>
     </div>
   </section>
@@ -818,25 +824,25 @@ textarea{resize:vertical;min-height:68px}
 <div id="page-vehicles" class="page">
   <div class="page-banner"><div class="kicker">Vehicle Catalog</div><h1 class="sec-title">Sedans, SUVs &amp; <em>Buses</em></h1><div class="gold-rule"></div><p class="page-banner-desc">Browse our complete range. Click any image to open the full detail view.</p></div>
   <div class="search-bar-wrap"><div class="search-input-wrap"><span class="search-icon">&#x1F50D;</span><input class="search-input" id="v-search" type="text" placeholder="Search by model, variant, type..." oninput="renderVehicles()"></div><div class="search-count" id="v-count">14 vehicles</div></div>
-  <div class="filter-row"><span class="filter-label">Type:</span><button class="fchip active" data-vtype="all" onclick="setVF('type','all',this)">All Types</button><button class="fchip" data-vtype="Sedan" onclick="setVF('type','Sedan',this)">Sedan</button><button class="fchip" data-vtype="SUV" onclick="setVF('type','SUV',this)">SUV</button><button class="fchip" data-vtype="Bus" onclick="setVF('type','Bus',this)">Bus</button><span class="filter-label" style="margin-left:1rem">Brand:</span><button class="fchip active" data-vbrand="all" onclick="setVF('brand','all',this)">All Brands</button><button class="fchip" data-vbrand="mercedes" onclick="setVF('brand','mercedes',this)">Mercedes</button><button class="fchip" data-vbrand="bmw" onclick="setVF('brand','bmw',this)">BMW</button><button class="fchip" data-vbrand="volkswagen" onclick="setVF('brand','volkswagen',this)">Volkswagen</button></div>
+  <div class="filter-row"><span class="filter-label">Type:</span><button class="fchip active" data-vtype="all" onclick="setVF('type','all',this)">All Types</button><button class="fchip" data-vtype="Sedan" onclick="setVF('type','Sedan',this)">Sedan</button><button class="fchip" data-vtype="SUV" onclick="setVF('type','SUV',this)">SUV</button><button class="fchip" data-vtype="Bus" onclick="setVF('type','Bus',this)">Bus</button><span class="filter-label" style="margin-left:1rem">Brand:</span><button class="fchip active" data-vbrand="all" onclick="setVF('brand','all',this)">All Brands</button><button class="fchip" data-vbrand="mercedes" onclick="setVF('brand','mercedes',this)">Mercedes</button><button class="fchip" data-vbrand="bmw" onclick="setVF('brand','bmw',this)">BMW</button><button class="fchip" data-vbrand="audi" onclick="setVF('brand','audi',this)">Audi</button><button class="fchip" data-vbrand="volkswagen" onclick="setVF('brand','volkswagen',this)">Volkswagen</button></div>
   <div style="padding:2rem clamp(1.2rem,5vw,5rem) 4rem;background:var(--bg)"><div class="vehicles-grid" id="vgrid"></div></div>
   <footer class="site-footer"><div class="footer-grid"><div><div class="footer-logo">Auto<em>Elite</em></div><div class="footer-logo-ng">Nigeria</div><p class="footer-desc">Nigeria&rsquo;s premier direct-import portal.</p></div><div class="footer-col"><h4>Products</h4><ul><li><a href="#" onclick="goTo('vehicles');return false">Vehicles</a></li><li><a href="#" onclick="goTo('parts');return false">Factory Parts</a></li><li><a href="#" onclick="goTo('accessories');return false">Accessories</a></li></ul></div><div class="footer-col"><h4>Import Services</h4><ul><li><a href="#">Customs Clearance</a></li><li><a href="#">Nationwide Delivery</a></li></ul></div><div class="footer-col"><h4>Company</h4><ul><li><a href="#">About AutoElite NG</a></li><li><a href="#">Terms &amp; Conditions</a></li></ul></div></div><div class="footer-bottom"><span>&copy; 2025 AutoElite Nigeria Ltd.</span><div class="footer-ng-note"><div class="ng-flag-sm"><span></span><span></span><span></span></div><span>Lagos &middot; Abuja &middot; Port Harcourt</span></div></div></footer>
 </div>
 
 <!-- PARTS PAGE -->
 <div id="page-parts" class="page">
-  <div class="page-banner"><div class="kicker">Genuine OEM Parts</div><h1 class="sec-title">Factory Parts &amp; <em>Components</em></h1><div class="gold-rule"></div><p class="page-banner-desc">Sourced directly from Mercedes-Benz, BMW, and Volkswagen manufacturer networks. Click any image for the full detail view.</p></div>
+  <div class="page-banner"><div class="kicker">Genuine OEM Parts</div><h1 class="sec-title">Factory Parts &amp; <em>Components</em></h1><div class="gold-rule"></div><p class="page-banner-desc">Sourced directly from Mercedes-Benz, BMW, Audi, and Volkswagen manufacturer networks. Click any image for the full detail view.</p></div>
   <div class="search-bar-wrap"><div class="search-input-wrap"><span class="search-icon">&#x1F50D;</span><input class="search-input" id="p-search" type="text" placeholder="Search parts by name, compatibility..." oninput="renderParts()"></div><div class="search-count" id="p-count">16 parts</div></div>
-  <div class="filter-row"><span class="filter-label">Brand:</span><button class="fchip active" onclick="setPF('all',this)">All Brands</button><button class="fchip" onclick="setPF('mercedes',this)">Mercedes</button><button class="fchip" onclick="setPF('bmw',this)">BMW</button><button class="fchip" onclick="setPF('volkswagen',this)">Volkswagen</button></div>
+  <div class="filter-row"><span class="filter-label">Brand:</span><button class="fchip active" onclick="setPF('all',this)">All Brands</button><button class="fchip" onclick="setPF('mercedes',this)">Mercedes</button><button class="fchip" onclick="setPF('bmw',this)">BMW</button><button class="fchip" onclick="setPF('audi',this)">Audi</button><button class="fchip" onclick="setPF('volkswagen',this)">Volkswagen</button></div>
   <div style="padding:2rem clamp(1.2rem,5vw,5rem) 4rem;background:var(--bg)"><div class="parts-grid" id="pgrid"></div></div>
   <footer class="site-footer"><div class="footer-grid"><div><div class="footer-logo">Auto<em>Elite</em></div><div class="footer-logo-ng">Nigeria</div><p class="footer-desc">Nigeria&rsquo;s premier direct-import portal.</p></div><div class="footer-col"><h4>Products</h4><ul><li><a href="#" onclick="goTo('vehicles');return false">Vehicles</a></li><li><a href="#" onclick="goTo('parts');return false">Factory Parts</a></li><li><a href="#" onclick="goTo('accessories');return false">Accessories</a></li></ul></div><div class="footer-col"><h4>Import Services</h4><ul><li><a href="#">Customs Clearance</a></li><li><a href="#">Nationwide Delivery</a></li></ul></div><div class="footer-col"><h4>Company</h4><ul><li><a href="#">About AutoElite NG</a></li><li><a href="#">Terms &amp; Conditions</a></li></ul></div></div><div class="footer-bottom"><span>&copy; 2025 AutoElite Nigeria Ltd.</span><div class="footer-ng-note"><div class="ng-flag-sm"><span></span><span></span><span></span></div><span>Lagos &middot; Abuja &middot; Port Harcourt</span></div></div></footer>
 </div>
 
 <!-- ACCESSORIES PAGE -->
 <div id="page-accessories" class="page">
-  <div class="page-banner"><div class="kicker">Vehicle Accessories</div><h1 class="sec-title">Enhancements &amp; <em>Add-ons</em></h1><div class="gold-rule"></div><p class="page-banner-desc">Premium accessories from authorised Mercedes-Benz, BMW, and Volkswagen accessory lines. Click any image for the full detail view.</p></div>
+  <div class="page-banner"><div class="kicker">Vehicle Accessories</div><h1 class="sec-title">Enhancements &amp; <em>Add-ons</em></h1><div class="gold-rule"></div><p class="page-banner-desc">Premium accessories from authorised Mercedes-Benz, BMW, Audi, and Volkswagen accessory lines. Click any image for the full detail view.</p></div>
   <div class="search-bar-wrap"><div class="search-input-wrap"><span class="search-icon">&#x1F50D;</span><input class="search-input" id="a-search" type="text" placeholder="Search accessories by name, compatibility..." oninput="renderAccessories()"></div><div class="search-count" id="a-count">16 accessories</div></div>
-  <div class="filter-row"><span class="filter-label">Brand:</span><button class="fchip active" onclick="setAF('all',this)">All Brands</button><button class="fchip" onclick="setAF('mercedes',this)">Mercedes</button><button class="fchip" onclick="setAF('bmw',this)">BMW</button><button class="fchip" onclick="setAF('volkswagen',this)">Volkswagen</button></div>
+  <div class="filter-row"><span class="filter-label">Brand:</span><button class="fchip active" onclick="setAF('all',this)">All Brands</button><button class="fchip" onclick="setAF('mercedes',this)">Mercedes</button><button class="fchip" onclick="setAF('bmw',this)">BMW</button><button class="fchip" onclick="setAF('audi',this)">Audi</button><button class="fchip" onclick="setAF('volkswagen',this)">Volkswagen</button></div>
   <div style="padding:2rem clamp(1.2rem,5vw,5rem) 4rem;background:var(--bg)"><div class="acc-grid" id="agrid"></div></div>
   <footer class="site-footer"><div class="footer-grid"><div><div class="footer-logo">Auto<em>Elite</em></div><div class="footer-logo-ng">Nigeria</div><p class="footer-desc">Nigeria&rsquo;s premier direct-import portal.</p></div><div class="footer-col"><h4>Products</h4><ul><li><a href="#" onclick="goTo('vehicles');return false">Vehicles</a></li><li><a href="#" onclick="goTo('parts');return false">Factory Parts</a></li><li><a href="#" onclick="goTo('accessories');return false">Accessories</a></li></ul></div><div class="footer-col"><h4>Import Services</h4><ul><li><a href="#">Customs Clearance</a></li><li><a href="#">Nationwide Delivery</a></li></ul></div><div class="footer-col"><h4>Company</h4><ul><li><a href="#">About AutoElite NG</a></li><li><a href="#">Terms &amp; Conditions</a></li></ul></div></div><div class="footer-bottom"><span>&copy; 2025 AutoElite Nigeria Ltd.</span><div class="footer-ng-note"><div class="ng-flag-sm"><span></span><span></span><span></span></div><span>Lagos &middot; Abuja &middot; Port Harcourt</span></div></div></footer>
 </div>
